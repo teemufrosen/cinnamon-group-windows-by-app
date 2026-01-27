@@ -30,7 +30,7 @@ The new option appears in System Settings → Windows → Alt-Tab:
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/cinnamon-group-windows-by-app.git
+git clone https://github.com/b3rs3rk1ng/cinnamon-group-windows-by-app.git
 cd cinnamon-group-windows-by-app
 chmod +x install.sh
 ./install.sh
