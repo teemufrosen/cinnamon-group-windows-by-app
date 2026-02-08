@@ -63,6 +63,10 @@ echo ""
 echo "Recompiling GSettings schemas..."
 sudo glib-compile-schemas "$SCHEMAS"
 
+echo "Restoring original keybindings..."
+gsettings set org.cinnamon.desktop.keybindings.wm switch-group "[]"
+gsettings set org.cinnamon.desktop.keybindings.wm switch-group-backward "[]"
+
 echo ""
 echo "========================================"
 echo "Uninstallation complete!"

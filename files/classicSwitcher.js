@@ -424,7 +424,7 @@ AppIcon.prototype = {
         let groupByApp = global.settings.get_boolean("alttab-switcher-group-by-app");
         let labelText;
         if (groupByApp) {
-            labelText = this.app ? this.app.get_name() : window.get_title();
+            labelText = window.get_title();
         } else {
             labelText = window.get_title();
         }
@@ -439,7 +439,7 @@ AppIcon.prototype = {
             bin.add_actor(this.label);
             this.actor.add(bin);
         } else {
-            this.label = new St.Label({ text: this.app ? this.app.get_name() : window.title });
+            this.label = new St.Label({ text: window.title });
             this.actor.add(this.label, { x_fill: false });
         }
     },
